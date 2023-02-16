@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(237, 237, 237);
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------------NAV SECTION */
+
+nav {
+    align-items: center;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+nav > ul > li:nth-child(2) {
+    display: flex;
+    gap: 3em;
+}
+
+.nav-menu {
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+}
+
+
+
+
+
+/* ------------------------------------------HEADER SECTION */
+
+header {
+    padding: 2em;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* -------------------------------HERO SECTION */
+
+section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+section > div:first-child {
+    width: 40em;
+    height: 20em;
+    background-color: rgb(187, 221, 251);
+    border-radius: 1em;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+
+section > div:nth-child(2) {
+    width: 16em;
+    height: 8em;
+    background-color: white;
+    margin-top: -22em;
+    margin-bottom: 2em;
+    border-radius: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div:nth-child(2):hover {
+    border: 2.5px solid rgb(187, 221, 251);
+}
+
+section > div:nth-child(2) > button {
+    width: 10em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: #005DFF;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+section > div:nth-child(2) > button:hover {
+    transform: translate(0, 2px);
+}
+
+section > div:nth-child(3) {
+    background-color: white;
+    padding-top: 2em;
+    border-radius: 1em;
+    width: 30em;
+    height: 26em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+section > div:nth-child(3) img {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    width: 100%;
+}
+
+.dots-bar {
+    display: flex;
+    gap: 0.8em;
+    margin-top: -1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.dots {
+    width: 0.8em;
+    height: 0.8em;
+    background-color: black;
+    border-radius: 50%;
+}
+
+/*--------------------------------------- USERS SECTION */
+
+.users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.users > h2 {
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.users > div {
+    font-size: 2.5em;
+    gap: 5em;
+}
+
+
+/* -----------------------------------FEATURES SECTION */
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    justify-content: center;
+}
+
+.feature-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 6em;
+    width: 100%;
+    background-color: #005DFF;
+    color: white;
+    gap: 4em;
+    padding: 3em 0;
+}
+
+.feature-sec > h2 {
+    font-size: 2.5em;
+}
+
+.feature-sec > div {
+    gap: 4em;
+}
+
+.feature-sec > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+
+    margin-bottom: 2em;
+}
+
+.feature-sec > div > div > i {
+    font-size: 4em;
+}
+
+.feature-p {
+    font-size: 1.2em;
+}
+
+
+/* --------------------------- ABOUT SECTION */
+
+.about-gap {
+    gap: 9em;
+}
+
+.pic-edit {
+    width: 30em;
+    height: 18em;
+    border-radius: 2em;
+}
+
+.txt-width {
+    width: 25em;
+}
+
+.about-sec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 9em;
+    margin-top: 4em;
+}
+
+.about-sec > div > div > p {
+    font-size: 1.2em;
+    color: gray;
+}
+
+.about-sec > div > div > p:first-child {
+    font-size: 2em;
+    color: black;
+}
+
+/* ----------------------------- EXTENSION SECTION */
+
+.extension {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    background-color: rgb(187, 221, 251);
+    padding-top: 2em;
+    
+}
+
+.extension > div {
+    width: 20em;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    border: 2px solid black;
+    border-radius: 2em;
+    padding: 2em;
+    box-shadow: 15px 15px 0px -4px rgba(0,0,0,1);
+}
+
+.extension i {
+    font-size: 2em;
+}
+
+.extension > div > p {
+    font-size: 1.2em;
+}
+
+.extension > div > p:first-child {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.extension > div > button {
+    width: 8em;
+    font-size: 1.4em;
+    outline: none;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+
+/* -------------------------------------FOOTER SECTION */
+footer {
+    width: 100%;
+    background-color: rgb(187, 221, 251);
+    color: white;
+    padding: 2em;
+    padding-top: 2em;
+}
+
+
+
+
+
