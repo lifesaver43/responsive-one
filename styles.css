@@ -17,10 +17,12 @@ nav {
 }
 
 nav > ul {
+    width: 100%;
     list-style-type: none;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 3em;
+    padding: 2em;
 }
 
 nav > ul > li:nth-child(2) {
